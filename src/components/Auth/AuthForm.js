@@ -19,7 +19,6 @@ const AuthForm = ()=>{
     if( token ){
       navigate("/todo");
     }
-    // window.localStorage.clear();
   }, []);
 
   useEffect(() => {
