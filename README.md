@@ -2,6 +2,8 @@
 
 원티드 프리온보딩 프론트엔드 사전과제였던 Todo List를 리액트로 구현해보았습니다.
 
+과제 내용 : https://github.com/walking-sunset/selection-task
+
 ---
 
 ### 데모 영상
