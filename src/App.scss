@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    url("./fonts/NotoSansKR-Regular.woff") format("woff"),
+    url("./fonts/NotoSansKR-Regular.woff2") format("woff2"),
+    url("./fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family : "NotoSansKR";
+  font-style: normal;
+  font-weight: 700;
+  src: 
+    url("./fonts/NotoSansKR-Bold.woff") format("woff"),
+    url("./fonts/NotoSansKR-Bold.woff2") format("woff2"),
+    url("./fonts/NotoSansKR-Bold.otf") format("opentype");
+}
+
+/* =========================================================
+* Reset
+* ========================================================= */
+html {
+	font-size: 14px/24px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, button, iframe, th, td, pre {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+	display: block;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+	font-weight: normal;
+}
+
+img, fieldset, iframe, button {
+	border: 0 none;
+}
+
+li {
+	list-style: none;
+}
+
+i, em, u, cite {
+	font-style: normal;
+}
+
+strong {
+	font-weight: normal;
+}
+
+a {
+	color: #757575;
+	text-decoration: none;
+	outline-offset: -1px;
+}
+
+.chrome a,
+.safari a {
+	outline-offset: -3px;
+}
+
+html, body {
+	height: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+
+body {
+	overflow-x: hidden;
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+
+body.non-scroll {
+	overflow-y: hidden;
+}
+
+/* Form */
+legend {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+select, input, label {
+	vertical-align: middle;
+}
+
+button {
+	border: 0 none;
+	cursor: pointer;
+	background: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+textarea {
+	-webkit-appearance: none;
+}
+
+body {
+	position: relative;
+	background: #fff;
+	font-family: "NotoSansKR", "Roboto", "Apple SD Gothic Neo", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: normal;
+	color: #000;
+	word-wrap: break-word;
+	word-break: keep-all;
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+}
+
+input {
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	-webkit-border-radius: 0;
+}
+
+a {
+	box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
