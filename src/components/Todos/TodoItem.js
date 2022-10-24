@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from 'styled-components';
 import { BiPencil } from 'react-icons/bi';
 import { IoIosCloseCircle } from 'react-icons/io';
-import { AiOutlineCheck } from 'react-icons/ai';
+import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 import { CgRadioCheck, CgCheckO } from "react-icons/cg";
 
 const TodoItem = ({ id, todo, isCompleted, updateItem, deleteItem })=>{
@@ -32,16 +32,26 @@ const TodoItem = ({ id, todo, isCompleted, updateItem, deleteItem })=>{
           )}
         </InputWrap>
         <ButtonWrap>
-          <button type='text'>
-            {correct ?(
-              <AiOutlineCheck onClick={()=>{ updateItem(id, text, isCompleted); setCorrect(false); }} color='#535353'/>
-            ) : (
-              <BiPencil onClick={()=>{ setText(todo); setCorrect(true); }} color='#535353'/>
-            )}
-          </button>
+          {correct ?(
+            <button type='text' onClick={()=>{ updateItem(id, text, isCompleted); setCorrect(false); }}>
+              <AiOutlineCheck color='#535353'/>
+            </button>
+          ) : (
+            <button type='text' onClick={()=>{ setText(todo); setCorrect(true); }}>
+              <BiPencil color='#535353'/>
+            </button>
+          )}
         </ButtonWrap>
         <ButtonWrap>
-          <button type='text' onClick={()=>{deleteItem(id)}}><IoIosCloseCircle/></button>
+          {correct ?(
+            <button type='text' onClick={()=>{setCorrect(false)}}>
+              <AiOutlineClose/>
+            </button>
+          ) : (
+            <button type='text' onClick={()=>{deleteItem(id)}}>
+              <IoIosCloseCircle/>
+            </button>
+          )}
         </ButtonWrap>
       </Inner>
     </Container>
