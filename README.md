@@ -7,7 +7,7 @@
 ---
 
 ### 배포 링크
-[ 클릭하시면 배포 링크로 이동합니다 ](https://todo-list-alwayssingyo.vercel.app/)
+[ 클릭하시면 배포 링크로 이동합니다 ](https://todolist-alwayssingyo.vercel.app/)
 
 ---
 
